@@ -1,5 +1,5 @@
 # Unqork Colorizer Privacy Policy
-
+ 
 Last updated: November 18, 2026.
 
 Unqork Colorizer has no data-collection server, analytics, telemetry, advertising, or network client. No application APIs are called. Nothing is transmitted by the extension.
