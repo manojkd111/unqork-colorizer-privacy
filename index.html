@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unqork Colorizer Privacy Policy</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; line-height: 1.65; color: #20352c; background: #f7f8f5; }
+    body { max-width: 850px; margin: 40px auto; padding: 0 24px; }
+    h1, h2 { line-height: 1.25; }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.5rem); }
+    a { color: #14634b; overflow-wrap: anywhere; }
+    code { background: #e9eee7; padding: 2px 5px; border-radius: 4px; overflow-wrap: anywhere; }
+    table { width: 100%; border-collapse: collapse; background: white; }
+    th, td { padding: 12px; text-align: left; vertical-align: top; border: 1px solid #cfd9d0; }
+    th { background: #e9eee7; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Unqork Colorizer Privacy Policy</h1>
+  <p>Last updated: November 18, 2026.</p>
+  <p>Unqork Colorizer has no data-collection server, analytics, telemetry, advertising, or network client. No application APIs are called. Nothing is transmitted by the extension.</p>
+  <p>The extension reads the rendered DOM of sites you explicitly allow to identify component cards and group structure. It adds temporary visual annotations and CSS. It does not access application framework state, authentication tokens, cookies, module APIs, or configuration objects. It does not trigger Save or Publish.</p>
+  <p>Persistent local data consists of your enabled preference, selected colors, and optional imported classification metadata. Metadata contains component keys, optional component IDs, normalized types, and ancestor keys. The entire URL is hashed to scope each import; the URL itself is not saved as part of the import. Raw exported HTML, configuration values and unrelated export properties are not retained. Imports are optional and remain in <code>chrome.storage.local</code>, not sync storage.</p>
+  <p>Permissions:</p>
+  <table>
+    <thead><tr><th scope="col">Permission</th><th scope="col">Purpose</th></tr></thead>
+    <tbody>
+      <tr><td><code>storage</code></td><td>Persist local settings and optional classification metadata.</td></tr>
+      <tr><td><code>activeTab</code></td><td>Identify the tab where you open the popup to offer access to its hostname.</td></tr>
+      <tr><td><code>scripting</code></td><td>Register/inject the bundled isolated-world colorizer on allowed sites.</td></tr>
+      <tr><td>Optional <code>https://*/*</code></td><td>Permit the user to approve their own organization's exact HTTPS hostname. No hosts are granted at installation.</td></tr>
+    </tbody>
+  </table>
+  <p>Use the popup to remove access to the current site or clear its metadata. Use the options page to delete all imported metadata. Removing site access does not delete saved preferences or metadata, so regranting the same host can resume your preferences. Uninstalling the extension removes its Chrome local storage. Refresh an open page if residual styling remains after Chrome removes the extension.</p>
+  <p>The extension does not include third-party runtime libraries. Development dependencies are only used to test and package it. This privacy statement applies to this source release; distributors are responsible for keeping it accurate if they modify the extension.</p>
+  <h2>Questions</h2>
+  <p>For privacy questions, open an issue at <a href="https://github.com/manojkd111/unqork-colorizer-privacy/issues">https://github.com/manojkd111/unqork-colorizer-privacy/issues</a>. Do not include confidential module or customer data in public issues.</p>
+</main>
+</body>
+</html>
